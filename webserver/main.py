@@ -36,15 +36,18 @@ CLIENT_MAX_TRIES = int(os.environ.get("CLIENT_MAX_TRIES"))
 
 # ---------------------------PREPARE IMAGE-------------------------------
 def prepare_image(image, target):
-    """Resize image to desired target"""
+    """Resize image to desired target(height and width) and pre-process it"""
     # If the image mode is not RGB, convert it
     if image.mode != "RGB":
         image = image.convert("RGB")
     
     # Resize the input image and preprocess it
-    image = image.resize(target)
+    image = image.resize(target) # resize to some height and width
     image = img_to_array(image)
     image = np.expand_dims(image, axis=0)
+    #Pre-processing an image means changing the pixel values from 0 to 255 to some range 
+    #e.g -1 to 1
+    # Here, we use the range that imagenet uses
     image = imagenet_utils.preprocess_input(image)
 
     # Return the processed image
