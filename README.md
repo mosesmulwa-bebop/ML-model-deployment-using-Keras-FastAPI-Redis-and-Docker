@@ -15,6 +15,9 @@ This repo is based of this article: [Medium Article](https://medium.com/analytic
 3. Using Redis as a message queue to pass queries and responses between the web server and model server. <br>
 4. Using Docker Compose to spin them all up! <br>
 
+## Contents
+1. [Why FastAPI](https://github.com/mosesmulwa-bebop/ML-model-deployment-using-Keras-FastAPI-Redis-and-Docker#why-fastapi) <br>
+
 
 ## 	How it works
 The main function of the web server is to serve a /predict endpoint through which other applications will call our machine learning model. <br>
