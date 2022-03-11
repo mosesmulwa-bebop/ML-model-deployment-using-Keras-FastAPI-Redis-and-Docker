@@ -36,15 +36,17 @@ CLIENT_MAX_TRIES = int(os.environ.get("CLIENT_MAX_TRIES"))
 
 # ---------------------------PREPARE IMAGE-------------------------------
 def prepare_image(image, target):
-    """Resize image to desired target(height and width) and pre-process it"""
+    """Resize image to desired target(height and width) and pre-process it.
+       image here is a PIL Image Instance thus has all the methods of a PIL Image Instance 
+    """
     # If the image mode is not RGB, convert it
     if image.mode != "RGB":
         image = image.convert("RGB")
     
     # Resize the input image and preprocess it
     image = image.resize(target) # resize to some height and width
-    image = img_to_array(image)
-    image = np.expand_dims(image, axis=0)
+    image = img_to_array(image) # Converts a PIL Image instance to a Numpy array.
+    image = np.expand_dims(image, axis=0) # Insert a new axis that will appear at the axis position in the expanded array shape.
     #Pre-processing an image means changing the pixel values from 0 to 255 to some range 
     #e.g -1 to 1
     # Here, we use the range that imagenet uses
