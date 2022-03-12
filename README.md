@@ -3,7 +3,7 @@
 This repo covers deployment of an image classification model(ResNet50) using FastAPI, Redis and Docker.<br>
 
 
-For in-depth Residual Networks: [Residual Networks](https://github.com/mosesmulwa-bebop/Residual-Network-for-Digit-Recognition) <br>
+For an in-depth project on Residual Networks: [Residual Networks](https://github.com/mosesmulwa-bebop/Residual-Network-for-Digit-Recognition) <br>
 
 For a more detailed FastAPI project: [Using FastAPI to build a full-fledged social media backend](https://github.com/mosesmulwa-bebop/Python-Api-Development)<br>
 
