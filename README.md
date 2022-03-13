@@ -7,7 +7,7 @@ For an in-depth project on Residual Networks: [Residual Networks](https://github
 
 For a more detailed FastAPI project: [Using FastAPI to build a full-fledged social media backend](https://github.com/mosesmulwa-bebop/Python-Api-Development)<br>
 
-This repo is based of this article: [Medium Article](https://medium.com/analytics-vidhya/deploy-machine-learning-models-with-keras-fastapi-redis-and-docker-4940df614ece)<br>
+This repo is based on this medium article: [Medium Article](https://medium.com/analytics-vidhya/deploy-machine-learning-models-with-keras-fastapi-redis-and-docker-4940df614ece)<br>
 
 ## Overview
 1. Building a web server using FastAPI (with Uvicorn) to serve as a machine learning endpoint. <br>
