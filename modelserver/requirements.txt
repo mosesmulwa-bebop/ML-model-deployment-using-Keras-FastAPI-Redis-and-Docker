@@ -2,5 +2,3 @@ tensorflow
 keras
 Pillow
 redis
-python-multipart
-
