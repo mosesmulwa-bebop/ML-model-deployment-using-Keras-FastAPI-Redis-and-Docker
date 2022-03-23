@@ -88,7 +88,7 @@ def predict(request: Request, img_file: bytes=File(...)):
         # uniquely identify an object or entity on the internet
         # we will use version 4
         k = str(uuid.uuid4())
-        #encode image to base 64. Serialization
+        #encode image to base 64. Serialization.Convert to string
         image = base64.encode(image).decode('utf-8')
         #create new  dict instance containing both image and its unique id
         d = {"id" : k, "image": image}

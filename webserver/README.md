@@ -1,3 +1,9 @@
+## Working
+The predict function pushes the encoded image into the Redis queue and then continually loops/polls until it obains the prediction data back from the model server. We then JSON-encode the data and instruct FastAPI to send the data back to the client.
+
+
+
+
 ## C-contiguous Array
 A contiguous array is just an array stored in an unbroken block of memory: to access the next value in the array, we just move to the next memory address.
 

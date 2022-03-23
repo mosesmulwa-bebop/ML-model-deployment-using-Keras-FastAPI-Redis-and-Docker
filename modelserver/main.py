@@ -17,3 +17,4 @@ db = redis.StrictRedis(host=os.environ.get("REDIS_HOST"))
 
 #Load the pre-trained Keras model trained on Imagenet
 model = ResNet50(weights="imagenet")
+
