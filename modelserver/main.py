@@ -18,7 +18,7 @@ db = redis.StrictRedis(host=os.environ.get("REDIS_HOST"))
 #Load the pre-trained Keras model trained on Imagenet
 model = ResNet50(weights="imagenet")
 
-# -------------Helper utility to Convert image string to numpy array-----------
+# -------------Helper utility to Convert image string to numpy array -----------
 def base64_decode_image(a, dtype ,shape):
     # If this is Python 3, we need the extra step of encoding the
     # serialized NumPy string as a byte object
