@@ -7,8 +7,8 @@ import os
 import sys
 import time
 
-from keras.applications import ResNet50
-from keras.applications import imagenet_utils
+from tensorflow.keras.applications import ResNet50
+from tensorflow.keras.applications import imagenet_utils
 import numpy as np
 import redis
 

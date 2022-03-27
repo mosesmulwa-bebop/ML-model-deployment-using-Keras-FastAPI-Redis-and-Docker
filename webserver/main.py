@@ -17,8 +17,8 @@ import os
 import time
 import uuid
 
-from keras.preprocessing.image import img_to_array
-from keras.applications import imagenet_utils
+from tensorflow.keras.preprocessing.image import img_to_array
+from tensorflow.keras.applications import imagenet_utils
 import numpy as np
 from PIL import Image
 import redis

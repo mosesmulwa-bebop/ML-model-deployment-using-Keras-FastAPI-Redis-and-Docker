@@ -9,6 +9,32 @@ For a more detailed FastAPI project: [Using FastAPI to build a full-fledged soci
 
 This repo is based on this medium article: [Medium Article](https://medium.com/analytics-vidhya/deploy-machine-learning-models-with-keras-fastapi-redis-and-docker-4940df614ece)<br>
 
+## Deployment
+1. First docker-compose
+```shell script
+   docker-compose up
+   ```
+2. Test with sample image provided
+```shell script
+   curl -X POST img_file=@doge.jpg http://localhost/predict
+   ```
+The sample Image
+![Doge](doge.jpg)
+
+3. Response if everything run correctly.
+##### Response (Code 200)
+
+```json
+{"success":true,
+"predictions":[
+    {"label":"dingo","probability":0.5237663984298706},
+    {"label":"Pembroke","probability":0.178588405251503},
+    {"label":"basenji","probability":0.1512373834848404},
+    {"label":"Eskimo_dog","probability":0.03126605227589607},
+    {"label":"bath_towel","probability":0.011432502418756485}]}
+```
+
+
 ## Overview
 1. Building a web server using FastAPI (with Uvicorn) to serve as a machine learning endpoint. <br>
 2. Building a machine learning model server that serves a Keras image classification model (ResNet50 trained on ImageNet). <br>
