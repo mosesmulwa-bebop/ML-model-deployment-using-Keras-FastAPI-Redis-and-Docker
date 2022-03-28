@@ -8,3 +8,5 @@ The image though is currently a base64 string.<br>
 Inorder for us to classify it,we need to convert it to a numpy array.<br>
 This is done in the base64 decode image part.<Br>
 We can then use the np array for prediction.<br>
+  
+ To be continued
